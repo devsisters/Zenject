@@ -1,11 +1,17 @@
+> ### NOTIFICATION TO ALL USERS
+> Zenject, a software developed by Modest Tree, was previously transferred and posted at  https://github.com/svermeulen/Zenject. The user previously requested donations for support of the Zenject development via online accounts. Please be aware that Modest Tree is not affiliated with any donation accounts. 
+>
+> The software has now been transferred back to the Modest Tree company account. We apologize for any confusion that this has caused Zenject users. 
+>
+> Previous correspondence regarding Zenject was handled by Modest Tree employee, Steve Vermeulen, and he has done a great job keeping the community updated. Following his departure, Zenject requests are being handled by alternative employees, who will be engaging on all current and future requests to support the community.
+>
+> Modest Tree looks forward to supporting all users of Zenject. You can also contact us at zenject@modesttree.com
 
 <img src="Documentation/Images/ZenjectLogo.png?raw=true" alt="Zenject" width="600px" height="134px"/>
 
 ## Dependency Injection Framework for Unity3D
 
 [![Join the chat at https://gitter.im/Zenject/Lobby](https://badges.gitter.im/Zenject/Lobby.svg)](https://gitter.im/Zenject/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-If you are looking for the older documentation for Zenject you can find that here:  <a href="https://github.com/modesttree/Zenject/tree/f0dd30ad451dcbc3eb17e636455a6c89b14ad537">Zenject 3.x</a>, <a href="https://github.com/modesttree/Zenject/tree/0b4a15b1e6e680c94fd34a2d7420eb41e320b21b">Zenject 4.x</a>, <a href="https://github.com/modesttree/Zenject/tree/dc019e31dbae09eb53c1638be00f7f002898956c">Zenject 5.x</a>
 
 ## <a id="introduction"></a>Introduction
 
@@ -3324,7 +3330,7 @@ See <a href="Documentation/ReleaseNotes.md">here</a>.
 
     The MIT License (MIT)
 
-    Copyright (c) 2010-2015 Modest Tree Media  http://www.modesttree.com
+    Copyright (c) 2010-2019 Modest Tree Media Inc. ZENJECT is a trademark of Modest Tree Media Inc..  http://www.modesttree.com
 
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal
