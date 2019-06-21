@@ -1,19 +1,27 @@
-> ### NOTIFICATION TO ALL USERS
-> Zenject, a software developed by Modest Tree, was previously transferred and posted at  https://github.com/svermeulen/Zenject. The user previously requested donations for support of the Zenject development via online accounts. Please be aware that Modest Tree is not affiliated with any donation accounts. 
->
-> The software has now been transferred back to the Modest Tree company account. We apologize for any confusion that this has caused Zenject users. 
->
-> Previous correspondence regarding Zenject was handled by Modest Tree employee, Steve Vermeulen, and he has done a great job keeping the community updated. Following his departure, Zenject requests are being handled by alternative employees, who will be engaging on all current and future requests to support the community.
->
-> Modest Tree looks forward to supporting all users of Zenject. You can also contact us at zenject@modesttree.com
 
-<img src="Documentation/Images/ZenjectLogo.png?raw=true" alt="Zenject" width="600px" height="134px"/>
+# Extenject
 
-## Dependency Injection Framework for Unity3D
+## Extensions and bug fixes to Zenject
 
-[![Join the chat at https://gitter.im/Zenject/Lobby](https://badges.gitter.im/Zenject/Lobby.svg)](https://gitter.im/Zenject/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/Extenject/community](https://badges.gitter.im/Extenject/Lobby.svg)](https://gitter.im/Extenject/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+This project is simply a fork of <a href="https://github.com/modesttree/zenject">Zenject</a> with the goal of being actively maintained.  I am the primary author and was the primary maintainer until my access was removed after leaving my position at the company Modest Tree.  It is called Extenject to respect Modest Tree's <a href="https://github.com/modesttree/Zenject/commit/2cbbf11b344d083cc697d8b248acf41520d72da3">trademark claim</a> on the name Zenject.
+
+## Lawsuit
+
+Extenject has been removed from Asset Store because of a copyright claim by Modest Tree, so the only way to obtain it currently is through the [releases section on github](https://github.com/svermeulen/Extenject/releases).
+
+Modest Tree has also filed a lawsuit against me, and Unity tells me that they will not re-enable Extenject in the Asset Store until the lawsuit is complete, which might not occur until 2020.
+
+I have been advised not to comment on details of the lawsuit right now - however you can read [their filing](https://drive.google.com/open?id=1pVVCuwsJfhQ-jj2cIe5oF6zNwHITCHbF) and [my defense](https://drive.google.com/open?id=1CYy2g46b2XiDoIsWb75SgLJoIGakGiyz) (both of which are public) for details.  The lawsuit also relates to other MIT license open source projects I created such as [Projeny](https://github.com/modesttree/Projeny) and [Unity3dAsyncAwaitUtil](https://github.com/modesttree/Unity3dAsyncAwaitUtil)
+
+## Support
+
+This project is supported via donations.  If you or your team have found it useful, please consider supporting further development through <a href="https://www.patreon.com/extenject">patreon</a> or <a href="https://paypal.me/stevevermeulen">paypal</a>
 
 ## <a id="introduction"></a>Introduction
+
+Note that if you are looking for the older documentation for Zenject you can find that here:  <a href="https://github.com/svermeulen/Extenject/tree/f0dd30ad451dcbc3eb17e636455a6c89b14ad537">Zenject 3.x</a>, <a href="https://github.com/svermeulen/Extenject/tree/0b4a15b1e6e680c94fd34a2d7420eb41e320b21b">Zenject 4.x</a>, <a href="https://github.com/svermeulen/Extenject/tree/dc019e31dbae09eb53c1638be00f7f002898956c">Zenject 5.x</a>
 
 Zenject is a lightweight highly performant dependency injection framework built specifically to target Unity 3D (however it can be used outside of Unity as well).  It can be used to turn your application into a collection of loosely-coupled parts with highly segmented responsibilities.  Zenject can then glue the parts together in many different configurations to allow you to easily write, re-use, refactor and test your code in a scalable and extremely flexible way.
 
@@ -27,11 +35,11 @@ Tested in Unity 3D on the following platforms:
 
 IL2CPP is supported, however there are some gotchas - see <a href="#aot-support">here</a> for details
 
-This project is open source.  You can find the official repository [here](https://github.com/modesttree/Zenject).
+This project is open source.
 
 For general troubleshooting / support, please post to [stack overflow](https://stackoverflow.com/questions/ask) using the tag 'zenject', or post in the [zenject google group](https://groups.google.com/forum/#!forum/zenject/)
 
-Or, if you have found a bug, you are also welcome to create an issue on the [github page](https://github.com/modesttree/Zenject), or a pull request if you have a fix / extension.  There is also a [gitter chat](https://gitter.im/Zenject/Lobby) that you can join for real time discussion.  You can also follow [@Zenject](https://twitter.com/Zenject) on twitter for updates.
+Or, if you have found a bug, you are also welcome to create an issue on the [github page](https://github.com/svermeulen/Extenject), or a pull request if you have a fix / extension.  There is also a [gitter chat](https://gitter.im/Extenject/community) that you can join for real time discussion.  Finally, you can also email me directly at sfvermeulen@gmail.com
 
 ## <a id="features"></a>Features
 
@@ -65,15 +73,15 @@ Or, if you have found a bug, you are also welcome to create an issue on the [git
 
 You can install Zenject using any of the following methods
 
-1. From [Releases Page](https://github.com/modesttree/Zenject/releases). Here you can choose between the following:
+1. From [Releases Page](https://github.com/svermeulen/Extenject/releases). Here you can choose between the following:
 
     * **Zenject-WithAsteroidsDemo.vX.X.unitypackage** - This is equivalent to what you find in the Asset Store and contains both sample games "Asteroids" and "SpaceFighter" as part of the package.  All the source code for Zenject is included here.
     * **Zenject.vX.X.unitypackage** - Same as above except without the Sample projects.
     * **Zenject-NonUnity.vX.X.zip** - Use this if you want to <a href="#using-outside-unity">use Zenject outside of Unity</a> (eg. just as a normal C# project)
 
-1. From the [Asset Store Page](http://u3d.as/content/modest-tree-media/zenject-dependency-injection/7ER)
+1. From the [Asset Store Page](https://www.assetstore.unity3d.com/#!/content/144698)
 
-    * Normally this should be the same as what you find in the [Releases section](https://github.com/modesttree/Zenject/releases), but may also be slightly out of date since Asset Store can take a week or so to review submissions sometimes.
+    * Normally this should be the same as what you find in the [Releases section](https://github.com/svermeulen/Extenject/releases), but may also be slightly out of date since Asset Store can take a week or so to review submissions sometimes.
 
 1. From Source
 
@@ -885,7 +893,7 @@ Where:
         ```csharp
         Container.Bind<Foo>().FromSubContainerResolve().ByNewPrefabResourceInstaller<FooInstaller>("Path/To/MyPrefab");
 
-        class FooInstaller : MonoInstaller
+        class FooInstaller : Installer<FooInstaller>
         {
             public override void InstallBindings()
             {
@@ -1257,7 +1265,7 @@ The usual workflow when setting up bindings using a DI framework is something li
 
 This works ok for small projects, but as the complexity of your project grows it is often a tedious process.  The problem gets worse if the startup time of your application is particularly bad, or when the exceptions only occur from factories at various points at runtime.  What would be great is some tool to analyze your object graph and tell you exactly where all the missing bindings are, without requiring the cost of firing up your whole app.
 
-You can do this in Zenject out-of-the-box by executing the menu item `Edit -> Zenject -> Validate Current Scene` or simply hitting `CTRL+ALT+V` with the scenes open that you want to validate.  This will execute all installers for the current scene, with the result being a fully bound container.   It will then iterate through the object graphs and verify that all bindings can be found (without actually instantiating any of them).  In other words, it executes a 'dry run' of the normal startup procedure.  Under the hood, this works by storing dummy objects in the container in place of actually instantiating your classes.
+You can do this in Zenject out-of-the-box by executing the menu item `Edit -> Zenject -> Validate Current Scene` or simply hitting `SHIFT+ALT+V` with the scenes open that you want to validate.  This will execute all installers for the current scene, with the result being a fully bound container.   It will then iterate through the object graphs and verify that all bindings can be found (without actually instantiating any of them).  In other words, it executes a 'dry run' of the normal startup procedure.  Under the hood, this works by storing dummy objects in the container in place of actually instantiating your classes.
 
 Alternatively, you can execute the menu item `Edit -> Zenject -> Validate Then Run` or simply hitting `CTRL+SHIFT+R`.  This will validate the scenes you have open and then if validation succeeds, it will start play mode.  Validation is usually pretty fast so this can be a good alternative to always just hitting play, especially if your game has a costly startup time.
 
@@ -1840,7 +1848,7 @@ public class MainInstaller : MonoInstaller
 
 If you are building some code as DLLs and then including them in Unity, you can still add bindings for those classes inside your installers, with the only limitation being that you have to use constructor injection.  If you want to use the other inject approaches such as member injection or method injection, then you can do that too, however in that case you will need to add a reference for your project to `Zenject-Usage.dll` which can be found in the `Zenject\Source\Usage` directory.  This DLL also includes the standard interfaces such as `ITickable,` `IInitializable,` etc. so you can use those as well.
 
-You can also use Zenject for non-unity projects by downloading `Zenject-NonUnity.zip` from the [releases section](https://github.com/modesttree/Zenject/releases)
+You can also use Zenject for non-unity projects by downloading `Zenject-NonUnity.zip` from the [releases section](https://github.com/svermeulen/Extenject/releases)
 
 Finally, if you are attempting to run unit tests outside of Unity using the Unity generated solution, you might encounter run time errors in the Zenject code when it attempts to access the Unity API.  You can disable this behaviour by adding a define for `ZEN_TESTS_OUTSIDE_UNITY` in the generated solution.
 
@@ -3320,7 +3328,7 @@ See <a href="Documentation/CheatSheet.md">here</a>.
 
 ## <a id="further-help"></a>Further Help
 
-For general troubleshooting / support, please use the [zenject subreddit](http://www.reddit.com/r/zenject) or the [zenject google group](https://groups.google.com/forum/#!forum/zenject/).  If you have found a bug, you are also welcome to create an issue on the [github page](https://github.com/modesttree/Zenject), or a pull request if you have a fix / extension.  You can also follow [@Zenject](https://twitter.com/Zenject) on twitter for updates.
+For general troubleshooting / support, please use the [zenject subreddit](http://www.reddit.com/r/zenject) or the [zenject google group](https://groups.google.com/forum/#!forum/zenject/).  If you have found a bug, you are also welcome to create an issue on the [github page](https://github.com/svermeulen/Extenject), or a pull request if you have a fix / extension.  You can also follow [@Zenject](https://twitter.com/Zenject) on twitter for updates.  Finally, you can also email me directly at sfvermeulen@gmail.com
 
 ## <a id="release-notes"></a>Release Notes
 
@@ -3330,7 +3338,7 @@ See <a href="Documentation/ReleaseNotes.md">here</a>.
 
     The MIT License (MIT)
 
-    Copyright (c) 2010-2019 Modest Tree Media Inc. ZENJECT is a trademark of Modest Tree Media Inc..  http://www.modesttree.com
+    Copyright (c) 2010-2015 Modest Tree Media  http://www.modesttree.com
 
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal
