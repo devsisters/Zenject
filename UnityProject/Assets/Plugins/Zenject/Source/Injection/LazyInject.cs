@@ -38,5 +38,24 @@ namespace Zenject
                 return _value;
             }
         }
+
+        public bool TryResolve(out T value)
+        {
+            if (_hasValue)
+            {
+                value = _value;
+                return true;
+            }
+
+            if (_container.HasBinding(_context))
+            {
+                value = _value = (T) _container.Resolve(_context);
+                _hasValue = true;
+                return true;
+            }
+
+            value = default;
+            return false;
+        }
     }
 }
