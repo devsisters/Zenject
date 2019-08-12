@@ -44,8 +44,7 @@ namespace Zenject
         public void Construct(
             DiContainer parentContainer)
         {
-            // XXX(daewon): 강제로 GameObjectContext 를 인스톨하는 상황이면 메소드인젝션 -> Install 순으로 해야합니다. 하지만 이렇게 했을 경우, SceneContext 에 의한 메소드인젝션이 일어나면서 한차례더 메소드가 호출이 됩니다. 결국 Assert.IsNull 이 걸려서 예외가 발생합니다.
-            // Assert.IsNull(_parentContainer);
+            Assert.IsNull(_parentContainer);
             _parentContainer = parentContainer;
 
             Initialize();
