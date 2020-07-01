@@ -42,11 +42,9 @@ pushd OptionalExtras
 remove_folder_with_metafile IntegrationTests
 remove_folder_with_metafile TestFramework
 remove_folder_with_metafile UnitTests
+remove_folder_with_metafile ReflectionBaking
 remove_folder_with_metafile "SampleGame1 (Beginner)"
 remove_folder_with_metafile "SampleGame2 (Advanced)"
 remove_file_with_metafile AutoMocking.zip
 remove_file_with_metafile AutoSubstitute.zip
 popd
-
-# 스스로를 삭제합니다.
-rm package.sh
