@@ -218,7 +218,8 @@ namespace Zenject
         {
             return type == null || type.IsEnum() || type.IsArray || type.IsInterface()
                 || type.ContainsGenericParameters() || IsStaticType(type)
-                || type == typeof(object);
+                || type == typeof(object)
+                || type.GetCustomAttribute(typeof(PreventTypeAnalysisAttribute)) != null;
         }
 
         static bool IsStaticType(Type type)
